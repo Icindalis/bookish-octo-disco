@@ -53,7 +53,7 @@ def generate_or_input(rows: int, columns: int) -> List[List[int]]:
     Returns:
         List[List[int]]: Матрица, заполненная в соответствии с выбором пользователя.
     """
-    choice = input("Введите число:\n\t1 - заполнение данных самому\n\t2 - генерация данных")
+    choice = input("\t1 - заполнение данных самому\n\t2 - генерация данных\nВведите число:\t")
     match choice:
         case "1":
             return get_matrix_from_user(rows, columns)
